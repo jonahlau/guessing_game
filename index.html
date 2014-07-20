@@ -23,12 +23,14 @@
             <h1>The Game.</h1>
         </div>
       	<div class="para1"> 
-	   			<h3>The Game has randomly chosen a number between 1 to 100. Can you guess what it is?</h3> 
-					<h3>You have 5 attempts left.</h3>
+	   			<p>The Game has randomly chosen a number between 1 to 100. Can you guess what it is?</p>
+					<p>You have  <span id="countdown">5</span>  attempts left.</p>
+				</div>
+				<div class="buttons"> 
 					<input type="text" id="form-input">
 					<button type="button" id="go-button">Go!</button>
-					<button type="button" class="hint-tryagain">Give me a hint</button>
-					<button type="button" class="hint-tryagain">Try again?</button>
+					<button type="button" id="hint-button">Give me a hint</button>
+					<button type="button" id="tryagain-button">Try again?</button>
 				</div>
 			</div>
 
@@ -37,14 +39,14 @@
 				<h2 class="heading">Previous guesses:</h2>
 			</div>
 				<ul id="past-guesses">
-					<li><h3>15</h3></li>
-					<li><h3>45</h3></li>
-					<li><h3>39</h3></li>
+					<li class="guess"></li>
 				</ul>
 		</div>
 		<footer>
 			<p>&copy; Jonathan Lau 2014.</p>
 		</footer>
 	</div>
+	<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+	<script type="text/javascript" src="js/application.js"></script>
 	</body>
 </html>

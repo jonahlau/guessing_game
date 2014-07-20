@@ -59,6 +59,7 @@ div .para1 {
 	margin-top: 10px;
 	margin-right: auto;
 	margin-left: auto;
+	height: 220px;
 }
 
 #past-guesses {
@@ -114,14 +115,57 @@ h3 {
 
 p {
 	font-family: 'Lato', sans-serif;
-	font-weight:normal;
+	font-weight:1.1em;
 	color:#1A1A1A;
-	margin:0;
+	margin:0 0 15px 0;
+}
+
+span {
+	font-size: 1.5em;
+	color: #FF1D25;
+	font-weight: bold;
+}
+
+.superclose {
+	font-family:'Lato', sans-serif;
+	font-weight:normal;
+	font-size: 1.1em;
+	color:#249754;
+	margin: 0 0 15px 0;
+}
+
+.close {
+	font-family:'Lato', sans-serif;
+	font-weight:normal;
+	font-size: 1.1em;
+	color:#a8db45;
+	margin: 0 0 15px 0;
+}
+
+.cold {
+	font-family:'Lato', sans-serif;
+	font-weight:normal;
+	font-size: 1.1em;
+	color:#de7a20;
+	margin: 0 0 15px 0;
+}
+
+.icecold {
+	font-family:'Lato', sans-serif;
+	font-weight:normal;
+	font-size: 1.1em;
+	color:#ff0000;
+	margin: 0 0 15px 0;
 }
 
 /***************************
 INPUT ELEMENTS
 ***************************/
+
+.buttons {
+	text-align: center;
+	padding-bottom: 20px;
+}
 
 #go-button {
 	width: 120px;
@@ -151,7 +195,7 @@ INPUT ELEMENTS
 	background-color: #1E8BC3;
 }
 
-.hint-tryagain {
+#hint-button {
 	width: 120px;
 	height: 22px;
 	border: 0;
@@ -164,7 +208,25 @@ INPUT ELEMENTS
 	margin-right: auto;
 }
 
-.hint-tryagain:hover {
+#hint-button:hover {
+	text-decoration: underline;
+}
+
+
+#tryagain-button {
+	width: 120px;
+	height: 22px;
+	border: 0;
+	background-color: transparent;
+	font-family: 'Lato', sans-serif;
+	font-size: 1em;
+	color: #3A539B;
+	font-weight: normal;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.tryagain-button:hover {
 	text-decoration: underline;
 }
 
