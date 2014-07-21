@@ -1,6 +1,6 @@
 $(document).ready(function() {
 	var count = 5;
-	var randomNum = 25;
+	var randomNum = Math.round(Math.random() * 100);
 
 	$("#go-button").on("click", function() {
 	
@@ -63,6 +63,7 @@ $(document).ready(function() {
 	$("#tryagain-button").on("click", function() {
 		count=5;
 		$("#countdown").text(count);
+		randomNum = Math.round(Math.random() * 100);
 		$(".para1").find(".nodeMarker").remove();
 		$(".para1").find(".nodeMarker").remove();
 		$(".guess").first().children().remove();
